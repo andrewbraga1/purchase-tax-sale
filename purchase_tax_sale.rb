@@ -8,7 +8,9 @@ class PurchaseTaxSale
     @generator = purchase_generator
   end
   
-  run()
+  run(Purchase, nil, 1)
+  #run(Purchase, nil, 2)
+  #run(Purchase, nil, 3)
 
   begin 
       if @list_of_products_file and @input_file

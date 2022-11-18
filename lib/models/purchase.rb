@@ -23,7 +23,8 @@ class Purchase
             @total+= order.total_order_amout
             @total_taxes+= order.total_taxes
         end
-        p @total, @total_taxes
+        print format "Sales Taxes: %.2f\n", @total_taxes
+        print format "Total: %.2f\n", @total
     end
 
     private
