@@ -1,6 +1,13 @@
-class Purchase
-    =begin
-    the idea here is to read a data from a input file as
-    txt as per input example, then sanitize it, and proceed with calculations
-    =end
+require_relative 'product'
+require './lib/constants_v1'
+class Purchase 
+    attr_accessor :products
+
+    def initialize(file, product_generator = Product)
+        @file = file
+        @generator = product_generator
+        @products = []
+        @total, @total_taxes = ZERO_FLOAT, ZERO_FLOAT
+    end 
+ 
 end
