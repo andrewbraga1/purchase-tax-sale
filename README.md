@@ -27,7 +27,7 @@ Please limit the amount of time you spend on the problem to 4 hours. If you have
 
 Write an application that prints out the receipt details
 
-This project will designed and develoved using Ruby.
+This project was designed and develoved using Ruby.
 
 
 ## Problem
