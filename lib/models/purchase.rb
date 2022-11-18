@@ -17,6 +17,15 @@ class Purchase
         load_file(@file)
     end
 
+    def purchase_stdout
+        @products.each do |order|
+            order.order_stdout
+            @total+= order.total_order_amout
+            @total_taxes+= order.total_taxes
+        end
+        p @total, @total_taxes
+    end
+
     private
     
     def load_file file

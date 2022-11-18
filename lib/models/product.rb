@@ -27,7 +27,18 @@ class Product
         @quantity * (tax_value)
     end
 
-        
+    def total_product
+        @price + tax_value
+    end
+
+    def total_order_amout
+        @quantity * (total_product)
+    end
+
+    def order_stdout
+        print format "#{@quantity} #{(@imported ? "#{IMPORTED} " : '')}#{@name}: %.2f\n", self.total_order_amout
+    end
+    
     private
 
     def verify_within_list_product
