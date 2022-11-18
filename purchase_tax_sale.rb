@@ -9,12 +9,13 @@ class PurchaseTaxSale
   end
   
   run()
-  
+ 
   begin 
       if @list_of_products_file and @input_file
           $list_of_products = JSON.load_file(@list_of_products_file)
           @purchase = @generator.new(@input_file)
-        else
+          @purchase.purchase_stdout
+      else
           raise 'No input file selected'
       end
   rescue Exception => error

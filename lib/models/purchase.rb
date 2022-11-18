@@ -25,8 +25,8 @@ class Purchase
             price = get_price order
             is_imported = is_imported? order
             name = get_product_name(order)
-            p quantity,name, price, is_imported 
+            @products << @generator.new(quantity, name, price, is_imported)
         end
     end
- 
+
 end
