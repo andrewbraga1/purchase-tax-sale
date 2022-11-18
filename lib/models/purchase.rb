@@ -9,5 +9,18 @@ class Purchase
         @products = []
         @total, @total_taxes = ZERO_FLOAT, ZERO_FLOAT
     end 
+
+    def process
+        load_file(@file)
+    end
+
+    private
+    
+    def load_file file
+        File.foreach(file) do |order| 
+           # receive file data which every line it is an order(items purchase)
+           # create helper for 'sanitization'
+        end
+    end
  
 end
