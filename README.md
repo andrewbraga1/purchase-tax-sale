@@ -11,7 +11,7 @@ IMPORTANT:
 Please limit the amount of time you spend on the problem to 4 hours. If you haven't completed the challenge within the allotted time, please submit the work you have completed. Focus on implementing the requirements with the best code you can produce within the given timeframe.
 
 <h4 align="center"> 
-	🚀 Ruby purchase-tax-sale Challenge 0.0.1 [=                          ] 001% 🚀
+	🚀 Ruby purchase-tax-sale Challenge 1.0.0 [=========================] 100% 🚀
 </h4>
  
 
@@ -41,14 +41,23 @@ When I purchase items I receive a receipt which lists the name of all the items 
 
 ## :information_source: How To Use
 
-toDo
+1 Install the ruby 3.0.3
+2 Install Bundler
+3 Run Ruby purchase-tax-sale Challenge in the main folder of the project or purchase_tax_sale.rb in the src folder
+
+```bash
+
+$ ruby purchase_tax_sale.rb
+
+```
+
 
 ## <img src="https://media.giphy.com/media/sxJ1nCeUoNSfe/giphy.gif" width="30" height="30"> Goals:
 
-- The program shall run from the command-line and take a text file as input
-- The program shall read the input text file and parse its content, which should sanitize its data in a appropiate manner
-- The program shall calculate total amounts of sales taxes and total cost of the items
-- The program shall print in a specified output as per [challenge.md instructions](https://gist.github.com/safplatform/792314da6b54346594432f30d5868f36).
+- The program shall run from the command-line and take a text file as input - ✔️
+- The program shall read the input text file and parse its content, which should sanitize its data in a appropiate manner - ✔️
+- The program shall calculate total amounts of sales taxes and total cost of the items - ✔️
+- The program shall print in a specified output as per [challenge.md instructions](https://gist.github.com/safplatform/792314da6b54346594432f30d5868f36). - ✔️
 
 
 
